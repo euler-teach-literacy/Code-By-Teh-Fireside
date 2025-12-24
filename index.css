@@ -1,1 +1,86 @@
+.background{
+    background-image: url("https://wallup.net/wp-content/uploads/2019/09/12512-minimalistic-pixels-dirt-minecraft-pixelation-simple-background-748x468.png");
+}
+.header_1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 400ms;
+    text-align: center;
+    position: fixed;
+    line-height: 6px;
+    left: 5%;
+    right: 5%;
+    border: 1px, solid, white;
+    border-radius: 14px;
+    background-image: url("https://t3.ftcdn.net/jpg/02/92/61/48/360_F_292614847_U24lM0AuCaTHTJUQETIG6oWK1NPGddhx.jpg");
+}
+.header_1:hover{
+    color: rgb(187, 190, 192);
+}
 
+#intro{
+    color: white;
+    transition: 0.2s;
+}
+#intro:hover{
+    color: antiquewhite;
+}
+
+h2{
+    color:white;
+    transition: 200ms;
+}
+h2:hover{
+    color: rgb(156, 243, 228);
+}
+
+.important{
+    color: red;
+    transition: 0.2s;
+    font:bold;
+}
+.important:hover{
+    color: rgb(234, 131, 200);
+}
+
+.ad{
+    border: 1px, white, solid;
+    border-radius: 12px;
+    color: white;
+    position:fixed;
+    margin: 20px;
+    padding: 20px;
+
+    right: 0;
+    top: 40%; /* Position vertically (optional) */
+    transform: translateY(-50%); /* Perfectly center vertically */
+    width: 15%;
+    height: 10%;
+    z-index: 1000;
+
+    background-image: url("https://wallpapers.com/images/featured/shrek-background-t28bqnccsqk0su84.jpg");
+    transition: 0.3s;
+}
+.ad:hover{
+    color: red;
+}
+
+.ad_font{
+    text-align: center;
+}
+.small_font{
+    font-size:x-small;
+    text-align: center;
+}
+
+.bookmark{
+    background-image: url("https://t4.ftcdn.net/jpg/01/64/42/95/360_F_164429506_XedAN1TF7Ncxc0hnFCk65YlJtqAG6ZfT.jpg");
+    border: 1px, solid,white;
+    border-radius: 13px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    line-height: 6px;
+    padding: 2px;
+}
