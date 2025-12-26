@@ -10,13 +10,13 @@ html {
     display: flex;
 }
 
-
-/*  */
+/* bookmark bar */
 .sidebar{
-    background-color: white;
+    background-image: url("https://i.pinimg.com/736x/8a/79/ae/8a79ae60c65c025c65d1e9a70fdacd95.jpg");
     padding-top: 10px;
     width: 110px;
     border: 1px, solid,white;
+    border-radius: 13px;
     color: rgb(0, 0, 0);
     position: fixed;
     padding: 2px;
@@ -39,27 +39,38 @@ html {
 }
 
 .content{
+    font-size: larger;
+    color: white;
     margin-left: 150px;
     padding: 14px;
+}
+.bookmark{
+    color: white;
+    font:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.3s;
+}
+.bookmark:hover{
+    color: rgb(95, 226, 243);
 }
 /*  */
 
 .header_1{ 
-    left: 50%;
+    width: fit-content;
     top: 6px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 30%;
+    /* margin-right: 20%;  */
     transition: 400ms;
-    text-align: center;
+    text-align: center; 
     /* position: fixed; */
     line-height: 6px;
-    left: 5%;
-    right: 5%;
+    /*left: 300px;
+    right: 300px;  */
     border: 1px, solid, white;
     border-radius: 14px;
-    background-image: url("https://t3.ftcdn.net/jpg/02/92/61/48/360_F_292614847_U24lM0AuCaTHTJUQETIG6oWK1NPGddhx.jpg");
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77cbf476-3a0b-4ff8-89f3-a78bb2abad32/de4p4yw-425a39b9-20ab-490b-8c4f-1bd622c653d0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83N2NiZjQ3Ni0zYTBiLTRmZjgtODlmMy1hNzhiYjJhYmFkMzIvZGU0cDR5dy00MjVhMzliOS0yMGFiLTQ5MGItOGM0Zi0xYmQ2MjJjNjUzZDAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GlPLzQm2unIoh5RwC-1dKP_6nUAmE5iA32BxBiBPRyU");
 }
 .header_1:hover{
     color: rgb(187, 190, 192);
@@ -93,7 +104,7 @@ h2:hover{
 .ad{
     border: 1px, white, solid;
     border-radius: 12px;
-    color: white;
+    color: rgb(1, 255, 60);
     position:fixed;
     margin: 20px;
     padding: 20px;
@@ -105,11 +116,11 @@ h2:hover{
     height: 10%;
     z-index: 1000;
 
-    background-image: url("https://wallpapers.com/images/featured/shrek-background-t28bqnccsqk0su84.jpg");
+    background-image: url("https://p.novaskin.me/ncc1j6l6j8.png?class=thumbnail");
     transition: 0.3s;
 }
 .ad:hover{
-    color: red;
+    color: rgb(246, 255, 0);
 }
 
 .ad_font{
