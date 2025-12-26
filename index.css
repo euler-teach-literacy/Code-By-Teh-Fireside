@@ -104,19 +104,19 @@ h2:hover{
 .ad{
     border: 1px, white, solid;
     border-radius: 12px;
-    color: rgb(1, 255, 60);
+    color: rgb(137, 249, 112);
     position:fixed;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
 
     right: 0;
-    top: 40%; /* Position vertically (optional) */
-    transform: translateY(-50%); /* Perfectly center vertically */
-    width: 10%;
+    top: 40%; 
+    transform: translateY(-50%); 
+    width: 15%;
     height: 10%;
     z-index: 1000;
 
-    background-image: url("https://p.novaskin.me/ncc1j6l6j8.png?class=thumbnail");
+    background-image: url("https://minecraft.wiki/images/thumb/Gold_Ore_%28texture%29_JE7_BE4.png/120px-Gold_Ore_%28texture%29_JE7_BE4.png?6a8a2");
     transition: 0.3s;
 }
 .ad:hover{
@@ -124,10 +124,12 @@ h2:hover{
 }
 
 .ad_font{
+    top: 0;
     text-align: center;
+    line-height: 0px;
 }
 .small_font{
-    font-size:x-small;
+    font-size:smaller;
     text-align: center;
 }
 
