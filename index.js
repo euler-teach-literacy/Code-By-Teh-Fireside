@@ -3,7 +3,6 @@
 // const pargraph1 = document.getElementById("paragraph")
 // pargraph1.textContent = "paragraph"
 
-//ts so tuff
 
 //check bug before putting it pls
 
@@ -30,50 +29,28 @@ playlist = [
   "resources/Living Mice.mp3",
   "resources/his theme.mp3"
 ];
+// ===== Audio setup =====
+let currentIndex = 0;
+const player = document.createElement("audio");
+player.preload = "auto";
+player.volume = 0.5; // optional
+document.body.appendChild(player);
 
-const audio = new Audio();
-audio.volume = 0.5;
-
-let shuffled = [];
-let index = 0;
-let started = false;
-
-// Fisher–Yates shuffle (correct)
-function shuffle(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
+// ===== Start music on FIRST user action =====
 function startMusic() {
-  if (started) return;
-  started = true;
-
-  shuffled = shuffle(playlist);
-  index = 0;
-
-  audio.src = shuffled[index];
-  audio.play().catch(() => {});
+  player.src = playlist[currentIndex];
+  player.play().catch(() => {});
 }
 
-// Start on first real user action
-document.addEventListener("pointerdown", startMusic, { once: true });
-document.addEventListener("keydown", startMusic, { once: true });
-
-audio.addEventListener("ended", () => {
-  index++;
-
-  // reshuffle after all songs played
-  if (index >= shuffled.length) {
-    shuffled = shuffle(playlist);
-    index = 0;
-  }
-
-  audio.src = shuffled[index];
-  audio.play();
+// Listen for ANY real user interaction (once)
+["click", "keydown", "touchstart"].forEach(event => {
+  document.addEventListener(event, startMusic, { once: true });
 });
 
+// ===== Auto play next track =====
+player.addEventListener("ended", () => {
+  currentIndex = (currentIndex + 1) % playlist.length;
+  player.src = playlist[currentIndex];
+  player.play();
+});
 //ai is so useful that told me how to make this go to next track automatically
