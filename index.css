@@ -60,7 +60,7 @@ html {
     top: 6px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 30%;
+    margin-left: 43%;
     /* margin-right: 20%;  */
     transition: 400ms;
     text-align: center; 
@@ -110,10 +110,10 @@ h2:hover{
     padding: 10px;
 
     right: 0;
-    top: 40%; 
+    top: 20%; 
     transform: translateY(-50%); 
     width: 15%;
-    height: 10%;
+    height: 13%;
     z-index: 1000;
 
     background-image: url("https://minecraft.wiki/images/thumb/Gold_Ore_%28texture%29_JE7_BE4.png/120px-Gold_Ore_%28texture%29_JE7_BE4.png?6a8a2");
@@ -153,4 +153,44 @@ body{
 #click_me{
     font-size: small;
     left: 200px;
+    margin-left: 10%;
+
+}
+
+.website{
+    color: white;
+    transition: 0.2s;
+}
+.website:hover{
+    color: bisque;
+}
+.link{
+    color: #dddddd;
+    transition: 0.2s;
+}
+.link:hover{
+    background-color: rgb(142, 142, 142);
+}
+.ad2{
+    font-size: x-large;
+    text-align: center;
+    border: 1px, white, solid;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    position:fixed;
+    margin: 20px;
+    padding: 10px;
+
+    right: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 15%;
+    height: 20%;
+    z-index: 1000;
+
+    background-image: url("https://i.redd.it/9ra517ybxow21.png");
+    transition: 0.3s;
+}
+.ad2:hover{
+    color: yellow;
 }
