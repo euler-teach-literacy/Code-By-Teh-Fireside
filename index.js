@@ -11,11 +11,15 @@ const kbc_s = new Audio('resources/keyboard_click.mp3');
 kbc_b.addEventListener('click', () => {
   kbc_s.play();
 });
-
-if (kbc_s.play){
-  clicking_time += 1;
-};
 // // // / /// // // // / // / / // /
+// clicking ad
+const q_b = document.querySelector('.ads');
+const q_s = new Audio('resources/气死我嘞!.mp3');
+
+q_b.addEventListener('click', () => {
+  q_s.play();
+});
+
 
 //background musicconst 
 playlist = [
@@ -33,6 +37,7 @@ document.body.appendChild(player);
 
 function startMusic() {
   player.src = playlist[currentIndex];
+  player.volume = 0.5;
   player.play().catch(() => {});
 }
 
