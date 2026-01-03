@@ -210,3 +210,47 @@ body{
 .end:hover{
     color: rgb(242, 239, 161);
 }
+.color_change{
+    margin: 10px;
+    padding: 15px;
+    line-height: 4;
+    animation: colorChange 3s infinite alternate;
+    transition: 0.2s;
+    border-radius: 12px;
+}
+.color_change:hover{
+    font-style: italic;
+    border: 4px,red,solid;
+}
+@keyframes colorChange{
+    0%{
+        color: red;
+        background-color: green;
+        border: 2px,solid,red;
+    }
+    20%{
+        color: orange;
+        background-color: blue;
+        border: 2px,solid,orange;
+    }
+    40%{
+        color: yellow;
+        background-color: purple;
+        border: 2px,solid,yellow;
+    }
+    60%{
+        color:rgb(67, 221, 67);
+        background-color: red;
+        border: 2px,solid,rgb(67,211,67);
+    }
+    80%{
+        color: cyan;
+        background-color: rgb(255, 94, 0);
+        border: 2px,solid,cyan;
+    }
+    100%{
+        color: purple;
+        background-color: yellow;
+        border: 2px,solid,purple;
+    }
+}
